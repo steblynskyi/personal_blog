@@ -120,7 +120,7 @@ def register():
         db.session.add(new_user)
         db.session.commit()
         login_user(new_user)
-        return redirect(url_for("get_all_posts"))
+        return redirect(url_for("blog.get_all_posts"))
     return render_template("register.html", form=form, current_user=current_user, year=datetime.now().year)
 
 # User login
@@ -191,7 +191,7 @@ def add_new_post():
         )
         db.session.add(new_post)
         db.session.commit()
-        return redirect(url_for("get_all_posts"))
+        return redirect(url_for("blog.get_all_posts"))
     return render_template("make-post.html", form=form, current_user=current_user, year=datetime.now().year)
 
 # Admin-only route to edit a post
