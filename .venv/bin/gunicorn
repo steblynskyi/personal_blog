@@ -1,4 +1,4 @@
-#!/Users/ghost/git/personal-work/personal_blog/.venv/bin/python3.11
+#!/Users/ghost/git/personal-work/my_blog/.venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys
